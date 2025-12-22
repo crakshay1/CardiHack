@@ -28,11 +28,14 @@ Indeed, Random Forest is highly effective at capturing **Epistasis** (interactio
 #### 4. Postprocessing
 The model generates a risk probability score ($0.0$ to $1.0$) for each patient, allowing for threshold adjustments in clinical sensitivity.
 
-### B. Logistic Regression
-We didn't use any Machine Learning Algorithms, but we tried to compute the prediction with R, by using Logistic Regression...
+### B. Logistic Regression on both variables
+We didn't use any Machine Learning Algorithms, but we tried to compute the prediction with R, by using Logistic Regression... 
+
+### C. Logistic Regression + Naive Bayes
+What if we use logistic regression only on severity and Naive Bayes on MACE...
 
 ## 🌲 Predictions scores (for now)...
-Our main strategy with Chi² Test + Random Forest gave us the best score... However with only applying logistic regression, we had the worst scores. 
+Our main strategy with Chi² Test + Random Forest gave us the best score... However with only applying logistic regression (on both outcomes variables), we had the worst scores. 
 <img width="1234" height="872" alt="image" src="https://github.com/user-attachments/assets/b4b7c3b4-1317-4123-b1da-b1efe229a7cb" />  
 With our main strategy, we didn't take into account the following constraints :
 <img width="660" height="110" alt="image" src="https://github.com/user-attachments/assets/fc042afe-2661-49e9-9662-4813a5cec1b6" />
